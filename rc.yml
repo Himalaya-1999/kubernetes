@@ -4,13 +4,13 @@ metadata:
    name: "myrc"
 spec:
    selector:
-     app:web
+     app: web
    template:
      metadata:
        name: "mypod1"
        labels:
-         app:web
+         app: web
      spec:
        containers:
-         name: "mycont1"
-         image: "vimal13/apache-webserver-php"
+        - name: "mycont1"
+          image: "vimal13/apache-webserver-php"
